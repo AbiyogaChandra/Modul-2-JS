@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Latihan Praktikum 5</title>
+	</head>
+	<body>
+		Lihat console.
+		<script lang="javascript">
+			function student (nama, umur, kelas, hobi) {
+				this.name = nama;
+				this.age = umur;
+				this.grade = kelas;
+				this.hobbies = hobi,
+				this.displayInfo = function() {
+					console.log("Nama: " + this.name);
+					console.log("Usia: " + this.age);
+					console.log("Kelas: " + this.grade);
+					console.log("Hobi: " + this.hobbies.join(", "));
+				};
+			}
+			let Abed = new student ("Abed Greatvo Suseno", 16, "X RPL B", ["Menari", "Menyanyi"]);
+			let Abi = new student ("Abiyoga Permana Chandra", 16, "X RPL B", ["Koding", "Main game"]);
+			let Adinda = new student ("Adinda Fathimatuzzahro", 16, "X RPL B", ["Mencoba produk Apple"]);
+			let Aida = new student ("Aida Lutfiah Zahra", 16, "X RPL B", ["Belajar mobile"]);
+			let Aisha = new student ("Aisha Safa Alzena", 16, "X RPL B", ["Menyanyi"]);
+			// Menampilkan informasi siswa
+			Abed.displayInfo();
+			Abi.displayInfo();
+			Adinda.displayInfo();
+			Aida.displayInfo();
+			Aisha.displayInfo();
+		</script>
+	</body>
+</html>
